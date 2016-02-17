@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  get 'projects/collection'
+  get 'static/home'
 
+  get 'static/about'
+
+  get 'projects/collection'
   get 'projects/project'
 
   # The priority is based upon order of creation: first created -> highest priority.

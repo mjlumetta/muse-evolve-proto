@@ -1,9 +1,4 @@
-/* header */
-.header {
-	background-color: #0A1A69;
-	display: inline;
-}
-
-#appName {
-	font-color: white
-}
+/*
+*= require_self
+*= require "custom"
+*/
