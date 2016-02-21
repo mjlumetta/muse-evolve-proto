@@ -5,18 +5,39 @@
 	</h3>
 </div>
 
-<div class="divHomeText">
-	<p class="summary">
-		Evolution is a free project-management tool provided for the benefit of writers. 
-	</p>
-	<p>
-		With Evolution, you can do the following:
-	</p>
-	<ul>
-		<li>Organize all your writing projects in one place</li>
-		<li>Set statuses for each of your projects in progress, from "Idea" to "Published"</li>
-		<li>Store and view multiple revisions of a piece</li>
-		<li>Compare two drafts of a project side by side</li>
-		<li>Track your submissions for publication</li> 
-	</ul>
+<div class="row divHome">
+	<div class="col-sm-offset-3 col-sm-6">
+		<p class="summary">
+			Evolution is a free project-management tool provided for the benefit of writers. 
+		</p>
+		<p>
+			With Evolution, you can do the following:
+		</p>
+		<ul>
+			<li>Organize all your writing projects in one place</li>
+			<li>Set statuses for each of your projects in progress, from "Idea" to "Published"</li>
+			<li>Store and view multiple revisions of a piece</li>
+			<li>Compare two drafts of a project side by side</li>
+			<li>Track your submissions for publication</li> 
+		</ul>
+	</div>
+
+	<div id="homeSidebar" class="col-sm-3">
+		<form role="form">
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" class="form-control" />
+			</div>
+
+			<input type="submit" value="Log in" />
+		</form>
+
+		<p class="signupMessage">
+			Don't have an account? <%= link_to "Create one now.", register_path %>
+		</p>
+	</div>
 </div>
