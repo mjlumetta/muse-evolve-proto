@@ -7,6 +7,40 @@ body
 	padding-top: 60px;
 }
 
+/* mixins */
+@mixin boxSizing 
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* forms */
+input, textarea, select, .uneditable-input
+{
+	border: 1px solid #bbb;
+	width: 100%;
+	margin-bottom: 15px;
+	@include boxSizing;
+}
+
+#errorExplanation 
+{
+	color: red;
+	ul {
+		color: red;
+		margin: 0 0 30px 0;
+	}
+}
+
+.field_with_errors
+{
+	@extend .has-error;
+	.form-control {
+		color: $state-danger-text;
+	}
+}
+
 /* header */
 .header 
 {
@@ -81,4 +115,10 @@ footer ul li
 .signupMessage
 {
 	margin-top: 16px;
+}
+
+/* sign up */
+.divSignupForm
+{
+	margin-top: 30px;
 }
